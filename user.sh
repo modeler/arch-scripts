@@ -7,3 +7,4 @@ passwd dan
 
 su - dan -c "xdg-user-dirs-update"
 
+sed -i "s/# %wheel ALL=(ALL) NOPASSWD: ALL/%wheel ALL=(ALL) NOPASSWD: ALL/" /etc/sudoers
