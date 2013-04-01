@@ -2,6 +2,10 @@
 
 ln -s /usr/share/zoneinfo/Europe/London /etc/localtime
 
+pacman -S ntp
+systemctl enable ntpd
+timedatectl set-local-rtc 0
+
 echo "KEYMAP=uk" > /etc/vconsole.conf
 
 sed -i "s/^#en_GB.UTF-8/en_GB.UTF-8/" /etc/locale.gen
