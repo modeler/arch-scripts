@@ -3,8 +3,7 @@
 ln -s /usr/share/zoneinfo/Europe/London /etc/localtime
 
 pacman -S ntp
-ln -s '/usr/lib/systemd/system/ntpd.service' '/etc/systemd/system/multi-user.target.wants/ntpd.service'
-timedatectl set-local-rtc 0
+systemctl enable ntpd
 
 echo "KEYMAP=uk" > /etc/vconsole.conf
 
@@ -20,4 +19,3 @@ read myhostname
 echo "${myhostname}" > /etc/hostname
 
 passwd root
-
