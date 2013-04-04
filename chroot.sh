@@ -3,7 +3,7 @@
 ln -s /usr/share/zoneinfo/Europe/London /etc/localtime
 
 pacman -S ntp
-systemctl enable ntpd
+ln -s '/usr/lib/systemd/system/ntpd.service' '/etc/systemd/system/multi-user.target.wants/ntpd.service'
 timedatectl set-local-rtc 0
 
 echo "KEYMAP=uk" > /etc/vconsole.conf
@@ -15,7 +15,7 @@ echo "LANG=en_GB.UTF.8" > /etc/locale.conf
 syslinux-install_update -iam
 vi /boot/syslinux/syslinux.cfg
 
-echo "Enter a host name:"
+echo "Enter host name:"
 read myhostname
 echo "${myhostname}" > /etc/hostname
 

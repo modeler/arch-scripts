@@ -2,6 +2,7 @@
 
 pacman -S xdg-user-dirs
 
+groupadd networkmanager
 useradd -m -c "Dan Tootill" -g users -G audio,lp,networkmanager,optical,power,scanner,storage,video,wheel dan
 passwd dan
 
