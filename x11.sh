@@ -2,7 +2,7 @@
 
 pacman -S xorg-server xorg-apps xorg-xinit
 
-# See /usr/share/X11/xkb/rules/base.lst.
+# Note: see /usr/share/X11/xkb/rules/base.lst for available options.
 
 cat > /etc/X11/xorg.conf.d/10-keyboard.conf << EOF
 Section "InputClass"
