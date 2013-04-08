@@ -1,6 +1,6 @@
 #!/bin/sh
 
-pacman -S faenza-icon-theme xcursor-vanilla-dmz
+pacman -S faenza-icon-theme faience-icon-theme xcursor-vanilla-dmz
 
 cat > /etc/fonts/local.conf << EOF
 <?xml version="1.0"?>

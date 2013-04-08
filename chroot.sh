@@ -2,7 +2,7 @@
 
 ln -s /usr/share/zoneinfo/Europe/London /etc/localtime
 
-pacman -S ntp
+pacman -S ntp libedit
 # Note: cannot use "systemctl enable ntpd" here.
 ln -s '/usr/lib/systemd/system/ntpd.service' '/etc/systemd/system/multi-user.target.wants/ntpd.service'
 
