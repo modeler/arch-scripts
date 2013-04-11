@@ -1,6 +1,6 @@
 #!/bin/sh
 
-pacman -S laptop-mode-tools acpid
+pacman -S xf86-input-synaptics laptop-mode-tools acpid
 
 systemctl enable laptop-mode
 
