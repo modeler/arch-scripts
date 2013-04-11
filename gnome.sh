@@ -2,7 +2,7 @@
 
 me=dan
 
-pacman -S gnome gnome-extra gnome-tweak-tool faenza-icon-theme faience-icon-theme
+pacman -S gnome gnome-extra gnome-tweak-tool faience-icon-theme
 
 su - ${me} -c 'echo "exec gnome-session" >> $HOME/.xinitrc'
 
