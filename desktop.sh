@@ -1,6 +1,6 @@
 #!/bin/sh
 
-pacman -S freetype2-ubuntu fontconfig-ubuntu cairo-ubuntu ttf-ms-fonts ttf-vista-fonts gsfonts xcursor-vanilla-dmz
+pacman -S ttf-ms-fonts ttf-vista-fonts gsfonts xcursor-vanilla-dmz
 
 cat > /etc/fonts/local.conf << EOF
 <?xml version="1.0"?>
