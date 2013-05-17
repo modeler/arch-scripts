@@ -20,3 +20,7 @@ read myhostname
 echo "${myhostname}" > /etc/hostname
 
 passwd root
+
+echo "alias vi=vim" > /root/.bash_profile
+echo "syntax on" > /root/.vmrc
+
