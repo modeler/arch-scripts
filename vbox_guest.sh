@@ -8,3 +8,5 @@ vboxsf
 vboxvideo
 EOF
 
+systemctl enable dhcpcd
+
