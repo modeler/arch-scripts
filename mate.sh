@@ -13,3 +13,4 @@ pacman -Sy mate mate-extras gtk-engine-murrine
 
 su - ${me} -c 'echo "exec mate-session" >> $HOME/.xinitrc'
 
+sed -i -e "s/e8e8e8/f9f9f9/g" -e "s/e2e2e2/f3f3f3/g" -e "s/dcdcdc/ededed/g" /usr/share/themes/Menta/metacity-1/metacity-theme-1.xml
