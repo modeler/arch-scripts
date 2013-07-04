@@ -38,3 +38,5 @@ EOF
 systemctl enable virginmedia
 systemctl start virginmedia
 
+systemctl enable dhcpcd
+systemctl start dhcpcd
