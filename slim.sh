@@ -8,5 +8,5 @@ sed -i "s/^#auto_login          no/auto_login          yes/" /etc/slim.conf
 
 sed -i "s/^current_theme       default/current_theme       archlinux-darch-grey/" /etc/slim.conf
 
-systemctl enable slim
+ln -s '/usr/lib/systemd/system/slim.service' '/etc/systemd/system/display-manager.service'
 
