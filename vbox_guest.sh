@@ -8,5 +8,5 @@ vboxsf
 vboxvideo
 EOF
 
-systemctl enable dhcpcd
+ln -s '/usr/lib/systemd/system/dhcpcd.service' '/etc/systemd/system/multi-user.target.wants/dhcpcd.service'
 
