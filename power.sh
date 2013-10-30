@@ -1,4 +1,4 @@
 #!/bin/sh
 
-pacman -S upower pm-utils cpupower hdparm
+pacman -S upower pm-utils cpupower
 
