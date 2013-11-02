@@ -1,11 +1,11 @@
 #!/bin/sh
 
 me=dan
+fullname="Dan Tootill"
 
 pacman -S xdg-user-dirs
 
-groupadd networkmanager
-useradd -m -c "Dan Tootill" -g users -G audio,lp,networkmanager,optical,power,scanner,storage,video,wheel ${me}
+useradd -m -c ${fullname} -g users ${me}
 passwd ${me}
 
 su - ${me} -c 'echo "gtk-theme-name=\"Adwaita\"" > $HOME/.gtkrc-2.0'
