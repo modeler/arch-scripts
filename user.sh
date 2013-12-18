@@ -5,7 +5,7 @@ fullname="Dan Tootill"
 
 pacman -S xdg-user-dirs
 
-useradd -m -c ${fullname} -g users ${me}
+useradd -m -c "${fullname}" -g users ${me} -G wheel
 passwd ${me}
 
 su - ${me} -c 'echo "gtk-theme-name=\"Adwaita\"" > $HOME/.gtkrc-2.0'
