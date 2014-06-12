@@ -12,8 +12,8 @@ sed -i "s/^#en_GB.UTF-8/en_GB.UTF-8/" /etc/locale.gen
 locale-gen
 echo "LANG=en_GB.UTF-8" > /etc/locale.conf
 
-syslinux-install_update -iam
-vi /boot/syslinux/syslinux.cfg
+grub-install --target=i386-pc --recheck /dev/sda
+grub-mkconfig -o /boot/grub/grub.cfg
 
 echo "Enter host name:"
 read myhostname
