@@ -9,5 +9,6 @@ vboxnetflt
 vboxpci
 EOF
 
+depmod -a
 gpasswd -a dan vboxusers
 
