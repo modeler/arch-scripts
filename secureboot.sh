@@ -1,6 +1,6 @@
 #!/bin/bash
 
-os=$(ls -l /dev/disk/by-uuid/ | awk '/sda2/ { print $9 }')
+os=$(ls -l /dev/disk/by-uuid/ | awk '/sda6/ { print $9 }')
 
 pacman -S gummiboot
 
@@ -22,5 +22,7 @@ cp /boot/EFI/gummiboot/gummibootx64.efi /boot/EFI/loader.efi
 cd /boot/EFI
 wget http://blog.hansenpartnership.com/wp-uploads/2013/PreLoader.efi
 wget http://blog.hansenpartnership.com/wp-uploads/2013/HashTool.efi
+
+efibootmgr -c -d /dev/sda -p 2 -l /EFI/PreLoader.efi
 
 exit 0
